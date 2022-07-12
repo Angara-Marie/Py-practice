@@ -28,8 +28,8 @@ my_list= []
 my_list.append(num1)
 my_list.append(num2)
 my_list.append(num3)
-new_list = my_list.sort()
-print(new_list)
+my_list.sort()
+print(my_list)
 
 for num in range(10, 25):   
     if num % 5 != 0:
@@ -89,6 +89,6 @@ print(word("Tessa") )
 
 for i in range(1,6):
     for j in range(1, i+1):
-      print("*", end="")        
+       print("*", end=" ")        
            
 

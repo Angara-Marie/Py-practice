@@ -23,9 +23,10 @@ def squares():
 squares()
 def types():
     list_x = [23, "Python", 25.98]
+    new_list = []
     for x in list_x:
-      new_list = [type(x)]
-      print(new_list)
+      new_list.append(type(x))
+    print(new_list)
 types()
 # WAP to separate positive and negative number from a list.
 list_x = [23,4,-6,25,-8,22,-9]

@@ -51,4 +51,43 @@ for x in range(len(strng)):
         upper.append(strng[x])
 
 result = "".join(lower+upper)
-print(result)            
+print(result)   
+
+# Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. 
+# If the string length is less than 2, return instead of the empty string.
+word= input("Enter word")
+if len(word) < 2:
+    print("")
+else:
+    print(word[0:2] + word[-2:]) 
+
+
+#  Write a Python program to get a string from a given string where all occurrences of its first char have been changed to '$', except the first char itself
+def replace_char(word):
+       char = word[0].lower()
+       strng= word.replace(char, '$')
+       strng = char + strng[1:]
+       print(strng)
+replace_char("Angara")  
+
+# Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string
+def swap_char(strng1, strng2): 
+       single_strng =strng2[:2] + strng1[2:] + " " +strng1[:2] + strng2[2:]
+       print(single_strng)
+swap_char("Tessa", "Marie")   
+
+#  Given a string, convert the first half of the string to upper and the other half to lower.
+def case_converter(word):
+       half_index = len(word) // 2
+       result = ""
+       for char in range(len(word)):
+              if char < half_index:
+                     result += word[char].upper()
+              else:
+                     result += word[char]   
+       print(result) 
+case_converter("tessa")   
+
+x=[1,2,45,6,8,"winter"]
+z= set(dict.fromkeys(x))
+print(z) 

@@ -1,7 +1,7 @@
 #Write a program to create a list with random data types elements.
 list_x = [22,"Tessa", 2.0]
 for x in range(len(list_x)):
-    print(list_x[x],type(x), end=",")
+    print(list_x[x],type(list_x[x]), end=",")
 
 #Write a program to print all the elements of a list in single line.
 list_y = [23,34,45,56,67]   
@@ -78,4 +78,20 @@ for x in my_list:
         odd.append(x)
 print(odd)
 print(even)    
+
+# Given a two Python list. Write a program to iterate both lists simultaneously and display items from list1 in original order and items from list2 in reverse order.
+my_list = [20, 30,22,43,50,33]
+list_y = [23,34,45,56,67]
+for x in my_list and list_y[::-1]:
+    print(x)
+sentence = "I love food"
+new_word = ""
+for x in sentence:
+    new_word = x + new_word  
+print(new_word)
+sentence = "I love dancing" 
+stnc = sentence.split()
+for i in stnc:
+    print(" ".join(stnc[::-1]))
+    
 

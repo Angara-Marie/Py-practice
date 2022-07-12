@@ -50,4 +50,26 @@ for x in list_a:
     if x in list_b:
         print(True)
 
+if 'bar' in {'foo' :1,'bar': 2,'baz':3}:
+   print(1)
+   print(2)
+   if 'a' in 'qux':
+     print(3)
+print(4) 
+
+a= 100
+b= 50
+if a >b:
+  m=b
+  print(m) 
+else:
+    m=a
+    print(m)   
+
+print('a' + 'x' if '123'.isdigit() else 'y' + 'b')
+
+
+
+
+
 
