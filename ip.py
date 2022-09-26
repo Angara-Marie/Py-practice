@@ -12,7 +12,7 @@ import ipaddress
 #     #         counter += 1 
 #     #         return counter
 # solution('255255255255')
-def convert(s):
+def solution(s):
     length= len(s)
  
     # Check for string size
@@ -35,4 +35,4 @@ def convert(s):
                         counter += 1
                     return counter
     
-print(convert("255255255255"))  
+print(solution("255255255255"))  
